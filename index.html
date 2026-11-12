@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#427858"><meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><title>Rekod Batch</title>
+</head>
+<body><main>
+  <header><span class="badge">KITCHEN PRODUCTION</span><h1>Rekod Batch</h1><p>Jejak setiap batch dari mula hingga siap.</p></header>
+  <section class="card" aria-label="Borang rekod batch">
+    <label for="date">1. Tarikh</label><input id="date" type="date">
+    <fieldset><legend>2. Flavour</legend><div class="flavours" id="flavours"></div><input id="otherFlavour" class="text-input" type="text" placeholder="Taip nama flavour" maxlength="40" hidden></fieldset>
+    <button class="save" id="save" type="button">Save</button><p class="message" id="message" role="status"></p>
+  </section>
+  <section class="records"><div class="records-title"><h2>Batch Terkini</h2><button id="clear" class="link-button" type="button">Padam semua</button></div><ul id="recordList"></ul></section>
+</main><script src="app.js"></script></body>
+</html>
